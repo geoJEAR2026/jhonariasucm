@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { useRuta, useSubirAlCambiar, href } from './router.jsx'
 import { buscarRuta, rutaPorDefecto } from './rutas.js'
 import { useIdioma } from './i18n/IdiomaContexto.jsx'
-import { comun } from './data/comun.js'
 import Navegacion from './components/Navegacion.jsx'
 import Pie from './components/Pie.jsx'
 
@@ -14,12 +13,10 @@ export default function App() {
 
   useSubirAlCambiar(ruta)
 
-  // El título del navegador acompaña a la vista y al idioma activos.
+  // Título del navegador, en el idioma activo.
   useEffect(() => {
-    document.title = textos
-      ? `${textos.titulo} | ${comun.nombreCorto}`
-      : `404 | ${comun.nombreCorto}`
-  }, [textos])
+    document.title = c.ui.sitioTitulo
+  }, [c])
 
   return (
     <>

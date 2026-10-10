@@ -6,6 +6,7 @@ export default {
 
   // Textos de interfaz, repetidos en varias vistas.
   ui: {
+    sitioTitulo: 'Página Jhon Arias',
     marca: 'Portafolio',
     menuAbrir: 'Abrir menú',
     navegacion: 'Navegación principal',

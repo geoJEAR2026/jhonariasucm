@@ -5,6 +5,7 @@ export default {
   codigo: 'en',
 
   ui: {
+    sitioTitulo: 'Jhon Arias Page',
     marca: 'Portfolio',
     menuAbrir: 'Open menu',
     navegacion: 'Main navigation',
