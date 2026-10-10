@@ -28,7 +28,11 @@ export const comun = {
       url: 'https://www.linkedin.com/in/jhon-edwin-arias-reyes-5a98932ab',
       icono: 'linkedin',
     },
-    { nombre: 'ORCID', url: 'https://orcid.org/TU-ORCID', icono: 'orcid' },
+    {
+      nombre: 'ORCID',
+      url: 'https://orcid.org/0009-0009-9968-8776',
+      icono: 'orcid',
+    },
     { nombre: 'GitHub', url: 'https://github.com/geoJEAR2026', icono: 'github' },
   ],
 
