@@ -74,6 +74,13 @@ export default {
       resumen:
         'Esta sección recoge mi participación en espacios académicos: ponencias presentadas, congresos y encuentros a los que he asistido.',
     },
+    noticias: {
+      nombre: 'Noticias',
+      titulo: 'Noticias y notas de prensa',
+      subtitulo: 'Publicaciones institucionales que han reseñado mi trabajo.',
+      resumen:
+        'Reseñas publicadas por las universidades sobre mi grado y mi participación en escenarios académicos internacionales.',
+    },
     sobreMi: {
       nombre: 'Sobre mí',
       titulo: 'Sobre mí',
@@ -115,6 +122,10 @@ export default {
     ponenciasTexto: 'Participación como ponente en espacios académicos.',
     congresosTitulo: 'Congresos y asistencia',
     congresosTexto: 'Eventos académicos y profesionales a los que he asistido.',
+    prensaTitulo: 'En los medios',
+    prensaTexto:
+      'Notas publicadas por las instituciones. Cada una enlaza a la publicación original.',
+    leerNota: 'Leer la nota completa',
     interesesTitulo: 'Intereses',
     interesesTexto: 'Fuera del trabajo técnico, estos son los intereses que mantengo.',
     contactoTitulo: 'Contacto',
@@ -122,6 +133,26 @@ export default {
     contactoTexto:
       'Para consultas profesionales, colaboraciones académicas o propuestas de proyecto, el correo es el canal más directo.',
   },
+
+  noticias: [
+    {
+      fecha: '5 de junio de 2026',
+      medio: 'Universidad Católica de Manizales',
+      titulo: 'Investigación UCM en escenarios internacionales de alto nivel',
+      resumen:
+        'La universidad reseña la presentación de nuestro trabajo sobre la interpretabilidad de Google AlphaEarth en GeoAI 2026, en el GeoAI Research Center de la Universidad de Gante, junto a Justin Guthrie de Northeastern University.',
+      url: comun.noticias.geoai,
+    },
+    {
+      fecha: '24 de abril de 2023',
+      medio: 'Universidad del Quindío',
+      titulo:
+        'Se graduaron los dos primeros Ingenieros Topográficos y Geomáticos de la Uniquindío, de la región y del país',
+      resumen:
+        'Nota sobre la primera promoción del programa de Ingeniería Topográfica y Geomática, creado en 2020. El programa forma profesionales que aportan información geoespacial para el ordenamiento territorial y la gestión del riesgo en la región.',
+      url: comun.noticias.graduacion,
+    },
+  ],
 
   fortalezas: [
     {

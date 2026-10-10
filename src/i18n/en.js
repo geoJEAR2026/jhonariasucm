@@ -72,6 +72,13 @@ export default {
       resumen:
         'This section gathers my participation in academic settings: talks given, conferences and meetings attended.',
     },
+    noticias: {
+      nombre: 'News',
+      titulo: 'News and press',
+      subtitulo: 'Institutional coverage of my work.',
+      resumen:
+        'University coverage of my graduation and of my participation in international academic settings.',
+    },
     sobreMi: {
       nombre: 'About me',
       titulo: 'About me',
@@ -111,6 +118,10 @@ export default {
     ponenciasTexto: 'Participation as a speaker in academic settings.',
     congresosTitulo: 'Conferences attended',
     congresosTexto: 'Academic and professional events I have taken part in.',
+    prensaTitulo: 'In the media',
+    prensaTexto:
+      'Articles published by the institutions. Each one links to the original piece.',
+    leerNota: 'Read the full article',
     interesesTitulo: 'Interests',
     interesesTexto: 'Beyond technical work, these are the interests I keep up with.',
     contactoTitulo: 'Contact',
@@ -118,6 +129,26 @@ export default {
     contactoTexto:
       'For professional enquiries, academic collaborations or project proposals, email is the most direct channel.',
   },
+
+  noticias: [
+    {
+      fecha: '5 June 2026',
+      medio: 'Catholic University of Manizales',
+      titulo: 'UCM research in high-level international settings',
+      resumen:
+        'The university covers the presentation of our work on the interpretability of Google AlphaEarth at GeoAI 2026, held at the GeoAI Research Center of Ghent University, alongside Justin Guthrie of Northeastern University.',
+      url: comun.noticias.geoai,
+    },
+    {
+      fecha: '24 April 2023',
+      medio: 'University of Quindío',
+      titulo:
+        'The first two Surveying and Geomatics Engineers of Uniquindío, the region and the country, graduate',
+      resumen:
+        'Coverage of the first graduating class of the Surveying and Geomatics Engineering programme, created in 2020. The programme trains professionals who provide geospatial information for land-use planning and risk management in the region.',
+      url: comun.noticias.graduacion,
+    },
+  ],
 
   fortalezas: [
     {

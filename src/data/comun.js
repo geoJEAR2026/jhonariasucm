@@ -47,6 +47,14 @@ export const comun = {
     gema: 'https://gemaconstructorasas.com/',
   },
 
+  // Notas de prensa institucionales que mencionan mi trabajo.
+  noticias: {
+    graduacion:
+      'https://www.uniquindio.edu.co/noticias/publicaciones/2362/hoy-se-graduaron-los-dos-primeros-ingenieros-topograficos-y-geomaticos-de-la-uniquindio-de-la-region-y-del-pais/',
+    geoai:
+      'https://ucm.edu.co/intranet/investigacion-ucm-en-escenarios-internacionales-de-alto-nivel/',
+  },
+
   publicaciones: {
     manglares: 'https://doi.org/10.3390/computers15070414',
     alphaearth: 'https://doi.org/10.48550/arXiv.2603.16911',

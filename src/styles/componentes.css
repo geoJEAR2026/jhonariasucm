@@ -898,6 +898,29 @@
   font-style: italic;
 }
 
+/* ---------------- Tarjeta de noticia ---------------- */
+.nota {
+  border-top: 4px solid var(--cobalto-500);
+}
+
+.nota__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.nota__fecha {
+  font-size: 0.82rem;
+  color: var(--texto-suave);
+}
+
+.nota h3 {
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
 /* ---------------- Pie de página ---------------- */
 .pie {
   background: var(--fondo-invertido);

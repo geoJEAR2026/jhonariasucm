@@ -3,6 +3,7 @@ import HojaDeVida from './pages/HojaDeVida.jsx'
 import Portafolio from './pages/Portafolio.jsx'
 import Investigacion from './pages/Investigacion.jsx'
 import Eventos from './pages/Eventos.jsx'
+import Noticias from './pages/Noticias.jsx'
 import SobreMi from './pages/SobreMi.jsx'
 
 /**
@@ -53,9 +54,17 @@ export const rutas = [
     enResumen: true,
   },
   {
+    ruta: '/noticias',
+    clave: 'noticias',
+    indice: '05',
+    componente: Noticias,
+    enMenu: true,
+    enResumen: true,
+  },
+  {
     ruta: '/sobre-mi',
     clave: 'sobreMi',
-    indice: '05',
+    indice: '06',
     componente: SobreMi,
     enMenu: true,
     enResumen: true,
