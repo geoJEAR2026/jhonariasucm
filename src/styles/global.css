@@ -1,0 +1,161 @@
+/* ============================================================
+   Sistema de diseño — dos colores base
+   Dominante : azul cobalto (confianza, profesionalismo)
+   Secundario: blanco / gris claro (limpieza y legibilidad)
+   ============================================================ */
+
+:root {
+  /* Escala del azul cobalto */
+  --cobalto-900: #0a1f44;
+  --cobalto-800: #102a56;
+  --cobalto-700: #15387a;
+  --cobalto-600: #1b4ba3;
+  --cobalto-500: #2563c9;
+  --cobalto-400: #4b83e0;
+  --cobalto-100: #dfe9fa;
+  --cobalto-50: #eef4fd;
+
+  /* Escala neutra */
+  --blanco: #ffffff;
+  --gris-50: #f7f9fc;
+  --gris-100: #eef1f6;
+  --gris-200: #e1e6ee;
+  --gris-400: #9aa4b5;
+  --gris-600: #5b6577;
+  --gris-800: #2b3240;
+
+  /* Roles semánticos */
+  --fondo: var(--gris-50);
+  --fondo-elevado: var(--blanco);
+  --fondo-invertido: var(--cobalto-900);
+  --texto: var(--gris-800);
+  --texto-suave: var(--gris-600);
+  --texto-invertido: var(--blanco);
+  --acento: var(--cobalto-600);
+  --acento-suave: var(--cobalto-50);
+  --borde: var(--gris-200);
+
+  /* Tipografía y ritmo */
+  --fuente: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --radio: 14px;
+  --radio-sm: 8px;
+  --sombra: 0 1px 2px rgba(10, 31, 68, 0.04), 0 8px 24px rgba(10, 31, 68, 0.06);
+  --sombra-alta: 0 2px 4px rgba(10, 31, 68, 0.06), 0 16px 40px rgba(10, 31, 68, 0.12);
+  --ancho: 1120px;
+  --alto-nav: 68px;
+  --transicion: 180ms ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuente);
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--cobalto-900);
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--acento);
+  text-decoration: none;
+  transition: color var(--transicion);
+}
+
+a:hover {
+  color: var(--cobalto-800);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:focus-visible {
+  outline: 3px solid var(--cobalto-400);
+  outline-offset: 3px;
+  border-radius: var(--radio-sm);
+}
+
+/* ---------- Utilidades de maquetación ---------- */
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho);
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.seccion {
+  /* Dos secciones contiguas suman su relleno: con 3rem el espacio
+     entre contenidos queda en 6rem, no en 12rem. */
+  padding-block: clamp(2.25rem, 4.5vw, 3rem);
+}
+
+.seccion--alterna {
+  background: var(--blanco);
+  border-block: 1px solid var(--borde);
+}
+
+.rejilla {
+  display: grid;
+  gap: 1.5rem;
+  /* Las celdas de una misma fila se igualan en alto. */
+  align-items: stretch;
+}
+
+.rejilla--2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.rejilla--3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,10 @@
+IMPORTANTE - PRIVACIDAD
+
+El boton "Descargar CV" apunta a /documents/CV-Jhon-Arias.pdf
+
+No se copio aqui el PDF original porque contiene su numero de telefono
+personal. Antes de publicar, genere una version del CV SIN telefono y
+SIN documento de identidad, y guardela en esta carpeta con ese nombre.
+
+Si prefiere no ofrecer descarga, elimine la propiedad "cv" en
+src/data/perfil.js y los botones correspondientes.

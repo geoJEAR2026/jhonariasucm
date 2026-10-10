@@ -1,0 +1,5 @@
+Coloque aqui su fotografia profesional con el nombre: perfil.jpg
+Tamanio sugerido: 600x600 px, cuadrada.
+
+Tambien necesita una foto vertical (de pie) con el nombre: perfil-vertical.jpg
+Proporcion 3:4, por ejemplo 900x1200 px.
