@@ -5,13 +5,22 @@
  *
  * No incluye documento de identidad ni teléfono.
  */
+/**
+ * Antepone la ruta base del sitio a un archivo de /public.
+ *
+ * En GitHub Pages el sitio vive en /jhonariasucm/, no en la raíz del
+ * dominio: una ruta como '/img/perfil.jpg' apuntaría fuera del sitio.
+ * BASE_URL lo resuelve Vite al compilar, según `base` en vite.config.js.
+ */
+const archivo = (ruta) => `${import.meta.env.BASE_URL}${ruta}`.replace(/\/{2,}/g, '/')
+
 export const comun = {
   nombre: 'Jhon Eduin Arias Reyes',
   nombreCorto: 'Jhon Arias',
   email: 'jhon.arias2@ucm.edu.co',
-  foto: '/img/perfil.jpg',
-  fotoVertical: '/img/perfil-vertical.jpg',
-  cv: '/documents/CV-Jhon-Arias.pdf',
+  foto: archivo('img/perfil.jpg'),
+  fotoVertical: archivo('img/perfil-vertical.jpg'),
+  cv: archivo('documents/CV-Jhon-Arias.pdf'),
 
   enlaces: [
     {
@@ -24,8 +33,8 @@ export const comun = {
   ],
 
   logos: {
-    ucm: '/img/ucm.jpg',
-    uq: '/img/uq.jpg',
+    ucm: archivo('img/ucm.jpg'),
+    uq: archivo('img/uq.jpg'),
     sena: null,
   },
 
